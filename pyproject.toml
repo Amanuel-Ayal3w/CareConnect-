@@ -1,0 +1,32 @@
+[project]
+name = "careconnect"
+version = "0.1.0"
+description = "Healthcare Intelligence Platform for identifying medical deserts and analyzing healthcare coverage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Frontend
+    "streamlit>=1.30.0",
+    "pandas>=2.0.0",
+    "folium>=0.14.0",
+    "streamlit-folium>=0.15.0",
+    "plotly>=5.18.0",
+    "python-dotenv>=1.0.0",
+    # Backend - AI & Agents
+    "langgraph>=0.2.0",
+    "langgraph-checkpoint-postgres>=2.0.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-community>=0.3.0",
+    "openai>=1.0.0",
+    # Backend - Database
+    "supabase>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "pgvector>=0.3.0",
+    # Backend - Data Processing
+    "pydantic>=2.0.0",
+    "fastapi>=0.128.5",
+    "uvicorn>=0.40.0",
+    "python-multipart>=0.0.22",
+]
+
